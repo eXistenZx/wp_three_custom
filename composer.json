@@ -1,0 +1,35 @@
+{
+    "name": "pierre/wp_three_custom",
+    "authors": [
+        {
+            "name": "eXistenZx",
+            "email": "pierretordjman@orange.fr"
+        }
+    ],
+    "require": {
+      "php": ">=5.4",
+      "johnpbloch/wordpress": "4.*",
+      "wpackagist-plugin/advanced-custom-fields": "*",
+      "wpackagist-plugin/contact-form-7": "*",
+      "wpackagist-plugin/advanced-custom-fields": "*",
+      "wpackagist-plugin/seo-by-10web": "*",
+      "wpackagist-theme/hueman":"*",
+      "wpackagist-theme/twentyseventeen":"*",
+      "wpackagist-theme/bento":"*",
+      "wpackagist-theme/abacus":"*"
+    },
+    "extra": {
+      "wordpress-install-dir": "wp",
+      "installer-paths": {
+        "content/plugins/{$name}/": ["type:wordpress-plugin"],
+        "content/themes/{$name}/": ["type:wordpress-theme"]
+
+      }
+    },
+    "repositories":[
+    {
+        "type":"composer",
+        "url":"https://wpackagist.org"
+    }
+]
+}
